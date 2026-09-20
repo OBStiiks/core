@@ -1,0 +1,8 @@
+export const CONNECTION_STATE = {
+    DISCONNECTED: 'DISCONNECTED',
+    CONNECTING: 'CONNECTING',
+    CONNECTED: 'CONNECTED',
+    RECONNECTING: 'RECONNECTING'
+} as const;
+
+export type ConnectionState = typeof CONNECTION_STATE[keyof typeof CONNECTION_STATE];
